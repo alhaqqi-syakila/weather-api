@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --st-col: #00b3ff;
+    --sc-col: #ff00bb;
+    --td-col: #ffd500;
+    --dk-col: #020606;
+    --lt-col: #f5f5f5;
+    --gy-col: #33333349;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins';
+    padding: 1rem;
+    background-color: var(--st-col);
+    color: var(--dk-col)
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    align-items: center;
+}
+
+.kota {
+    font-size: 1.4rem;
+}
+
+main {
+    margin: 2rem 1rem;
+}
+
+section:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .6rem;
+}
+
+.tanggal {
+    background-color: var(--dk-col);
+    color: var(--st-col);
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.deskripsi {
+    font-weight: 600;
+}
+
+.suhu {
+    font-size: 10rem;
+    margin: -1.2rem 0;
+}
+
+section:nth-child(2) {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+.text-catatan {
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+section:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dk-col);
+    color: var(--st-col);
+    padding: 2rem;
+    height: 120px;
+    border-radius: .8rem;
+}
+
+.tipe-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.value {
+    margin-top: .5rem;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.nama-info {
+    color: var(--lt-col);
+    font-size: .7rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--gy-col);
+}
+
+footer a {
+    color: var(--dk-col);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1rem;
+    font-size: .6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+footer a .fa-solid {
+    font-size: 1.2rem;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+
+@media only screen and (min-width:900px){
+    body,footer {
+        padding: 1rem 20rem ;
+    }
+    body {
+        height: 100vh;
+    }
+    section:nth-child(3) {
+        justify-content: space-around;
+    }
+
+}
+

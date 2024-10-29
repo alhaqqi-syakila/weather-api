@@ -1,0 +1,29 @@
+:root {
+    --st-col: #00b3ff;
+    --sc-col: #ff00bb;
+    --td-col: #ffd500;
+    --dk-col: #020606;
+    --lt-col: #f5f5f5;
+    --gy-col: #33333349;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .5rem;
+}
+
+input,button {
+    padding: .8rem;
+    outline: none;
+    border: none;
+    border-radius: .2rem;
+}
+
+button {
+    background-color:var(--dk-col);
+    color: var(--st-col);
+    font-weight: 600;
+    font-size: .9rem;
+}
